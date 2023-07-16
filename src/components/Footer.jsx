@@ -44,9 +44,6 @@ const Footer = () => {
                     <div className="mr-5">Privacy Policy</div>
                     <div>Terms & Conditions</div>
                 </div>
-                <div>
-                    @2020 Lusion- ARJ's Theme
-                </div>
             </div>
         </div>
     );
