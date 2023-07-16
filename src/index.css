@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500&display=swap');
+
+* {
+    font-family: Jost, "sans-serif";
+    --gray: #EBEEEE
+}
+html{
+    position: relative;
+}
+.hero{
+    background: url("./assets/hero-image.png") no-repeat center;
+    background-color: var(--gray);
+}
+@media (max-width: 1020px){
+    .hero{
+        background: url("https://cdn.shopify.com/s/files/1/0421/6153/7180/files/slide-mobile-3.png?v=1606981070") no-repeat center;
+        background-color: var(--gray);
+        width: 100%;
+    }
+}
+.navbar{
+    background-color: var(--gray);
+}
+.nav-links .drop{
+    background-color: var(--gray);
+}
+.cart-counter{
+    @apply absolute top-[-0.85rem] right-[1.2rem] rounded-full bg-black text-white p-3 flex justify-center items-center h-6 w-6
+}
+.accessory-image-hover, .best-selling-image{
+    @apply mb-5 hover:scale-110 transition-all duration-300 drop-shadow-xl rounded-lg
+}
+.best-selling{
+    background-color: var(--gray)
+}
+.discount-banner{
+    background: url("https://cdn.shopify.com/s/files/1/0421/6153/7180/files/banner-2.png?v=1605777212") no-repeat center;
+    background-size: contain;
+    background-position: 86% 0%;
+    background-color: #f4f4f4;
+    margin-bottom: 30px;
+}
+.discount-offer, .footer{
+    background-color: var(--gray)
+}
+@layer components {
+    .tooltips{
+        @apply absolute w-auto top-0 right-0 min-w-max scale-0 origin-top transition-all duration-500 
+    }
+    .basket, .search, .compare{
+        @apply cursor-pointer border-2 border-black p-2 m-2
+    }
+    .hover-text{
+        @apply absolute w-auto top-20 right-20 min-w-max scale-0 origin-right transition-all duration-500 
+    }
+    .footer-icons{
+        @apply rounded-full p-5 bg-white text-xl
+    }
+}
+.footer-input-field{
+    background-color: #fff;
+}
+.cart_toggle{
+    @apply absolute max-w-full w-1/4 min-w-fit h-screen top-0 right-0 transition-all duration-500 bg-white flex flex-col justify-between overflow-y-auto
+}
+@media (max-width: 1400px){}
+.cart-close{
+    background-color: var(--gray);
+}
+.bottom-nav-counter{
+    @apply absolute top-[-0.85rem] right-[-0.8rem] rounded-full bg-black text-white p-3 flex justify-center items-center h-6 w-6
+}
