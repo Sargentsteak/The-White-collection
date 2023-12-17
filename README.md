@@ -18,4 +18,3 @@ Steps to run the project -
     Data: Any future date
     CVV: Any 3 digit number
 
-## App id hosted on - https://tailwind-lusion.vercel.app/
