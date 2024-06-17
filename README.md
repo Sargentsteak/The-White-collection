@@ -2,7 +2,7 @@
 
 Steps to run the project -
 ## Step I - Run the Frontend
-    cd lusion-react
+    cd The-White_collection
     npm i
     cd src
     npm start
